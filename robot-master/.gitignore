@@ -1,0 +1,16 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/robot-ui/node_modules
+# roadhog-api-doc ignore
+/robot-ui/src/utils/request-temp.js
+/robot-ui_roadhog-api-doc
+
+# production
+# /robot-ui/dist
+
+# misc
+/robot-ui/.DS_Store
+/robot-ui/npm-debug.log*
+
+/robot-ui/coverage

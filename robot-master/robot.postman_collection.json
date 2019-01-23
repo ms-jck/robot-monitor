@@ -1,0 +1,281 @@
+{
+	"id": "37ad79bf-104b-6c69-edc0-ba19eecb810a",
+	"name": "robot",
+	"description": "",
+	"order": [
+		"86007bcd-8f81-41f2-5ca3-d59c079e48c6",
+		"4a0dd715-b824-d624-b1c2-4c77eae7cdcc",
+		"8c34a619-3c52-8700-f3fe-662cabde744f",
+		"3c06dcb5-e0a9-f3b6-29a0-db52d0b522c3",
+		"7c3d13a0-3b24-5fed-d38e-f439df8ef657",
+		"0d377513-b81d-5fd0-e988-00a69e6e7d9f",
+		"07f84da1-a188-61f6-c56b-cda46878b105",
+		"44fcf0b9-32af-114d-d800-ff84808d4831",
+		"d23d214e-6134-a16e-9889-be7c106cb5d0"
+	],
+	"folders": [],
+	"timestamp": 1535022715816,
+	"owner": "3511307",
+	"public": false,
+	"requests": [
+		{
+			"id": "07f84da1-a188-61f6-c56b-cda46878b105",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://{{server}}/api/host",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1535334702220,
+			"name": "add host",
+			"description": "",
+			"collectionId": "37ad79bf-104b-6c69-edc0-ba19eecb810a",
+			"responses": [],
+			"rawModeData": "{\r\n  \"hostname\": \"ubuntu1\",\r\n  \"cpu\":{\r\n    \"count\": 2,\r\n    \"percent\": \"20%\"\r\n  },\r\n  \"memory\":{\r\n    \"total\": \"200\",\r\n    \"used\": \"100\",\r\n    \"free\": \"100\",\r\n    \"percent\": \"50%\"\r\n  },\r\n  \"containers\":[{\r\n    \"id\":\"dfadgfdjk\",\r\n    \"name\":\"mysql\",\r\n    \"status\": \"running\",\r\n    \"image\": \"ubuntu\",\r\n\t\"labels\": \"name:ll\"\r\n  },{\r\n    \"id\":\"dfasgfhjk\",\r\n    \"name\":\"mysql\",\r\n    \"status\": \"running\",\r\n    \"image\": \"ubuntu\",\r\n\t\"labels\": \"name:ll\"\r\n  }]\r\n}"
+		},
+		{
+			"id": "0d377513-b81d-5fd0-e988-00a69e6e7d9f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://{{server}}/api/monitor_host",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1535265532171,
+			"name": "delete monitor_host",
+			"description": "",
+			"collectionId": "37ad79bf-104b-6c69-edc0-ba19eecb810a",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\":\"lb\",\n\t\"ip\":\"127.0.0.1\"\n}"
+		},
+		{
+			"id": "3c06dcb5-e0a9-f3b6-29a0-db52d0b522c3",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://{{server}}/api/monitor_host",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1535265413833,
+			"name": "add monitor_host",
+			"description": "",
+			"collectionId": "37ad79bf-104b-6c69-edc0-ba19eecb810a",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\":\"lbdss\",\n\t\"ip\":\"127.0.0.1\"\n}"
+		},
+		{
+			"id": "44fcf0b9-32af-114d-d800-ff84808d4831",
+			"headers": "",
+			"headerData": [],
+			"url": "http://{{server}}/api/host?username=lb",
+			"queryParams": [
+				{
+					"key": "username",
+					"value": "lb",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1535268062409,
+			"name": "get host",
+			"description": "",
+			"collectionId": "37ad79bf-104b-6c69-edc0-ba19eecb810a",
+			"responses": []
+		},
+		{
+			"id": "4a0dd715-b824-d624-b1c2-4c77eae7cdcc",
+			"headers": "",
+			"headerData": [],
+			"url": "http://{{server}}/api/user/getUser",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "37ad79bf-104b-6c69-edc0-ba19eecb810a",
+			"data": null,
+			"dataMode": "params",
+			"name": "get users",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1535022882967,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "7c3d13a0-3b24-5fed-d38e-f439df8ef657",
+			"headers": "",
+			"headerData": [],
+			"url": "http://{{server}}/api/monitor_host?username=lb",
+			"queryParams": [
+				{
+					"key": "username",
+					"value": "lb",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1535265428767,
+			"name": "get monitor_hosts",
+			"description": "",
+			"collectionId": "37ad79bf-104b-6c69-edc0-ba19eecb810a",
+			"responses": []
+		},
+		{
+			"id": "86007bcd-8f81-41f2-5ca3-d59c079e48c6",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://{{server}}/api/user/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "37ad79bf-104b-6c69-edc0-ba19eecb810a",
+			"data": [],
+			"dataMode": "raw",
+			"name": "login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1535334146939,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"username\":\"admin\",\n\t\"password\":\"admin\"\n}"
+		},
+		{
+			"id": "8c34a619-3c52-8700-f3fe-662cabde744f",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://{{server}}/api/pic",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "c.jpg",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1535043027352,
+			"name": "upload pic",
+			"description": "",
+			"collectionId": "37ad79bf-104b-6c69-edc0-ba19eecb810a",
+			"responses": []
+		},
+		{
+			"id": "d23d214e-6134-a16e-9889-be7c106cb5d0",
+			"headers": "",
+			"headerData": [],
+			"url": "http://{{server}}/api/host/127.0.0.1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1535259116902,
+			"name": "delete host",
+			"description": "",
+			"collectionId": "37ad79bf-104b-6c69-edc0-ba19eecb810a",
+			"responses": []
+		}
+	]
+}

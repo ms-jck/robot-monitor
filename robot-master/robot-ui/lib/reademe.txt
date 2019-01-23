@@ -1,0 +1,2 @@
+linux安装完包后报找不到 ...\robot-ui\node_modules\@babel\runtime\helpers\objectSpread.js时
+则将此文件复制到node_modules\@babel\runtime\helpers
